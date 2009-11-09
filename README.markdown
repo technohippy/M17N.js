@@ -8,10 +8,11 @@ How to Use
 
 ### Functions
 
-- M18N.translate(key) : translate key into M17N.locale languate
-- M18N.insertTranslate(key) : insert translated words at the position of the script tag.
-- t(key) : alias of M18N.translate(key)
-- it(key) : alias of M18N.insertTranslate(key)
+- M17N.setLocale(locale) : the given locale is stored in cookie and the value is used as default next time
+- M17N.translate(key) : translate key into M17N.locale languate
+- M17N.insertTranslate(key) : insert translated words at the position of the script tag.
+- t(key) : alias of M17N.translate(key)
+- it(key) : alias of M17N.insertTranslate(key)
 
 ### Special ClassName
 
@@ -45,7 +46,7 @@ Sample
 License
 -------
 
-he MIT License
+The MIT License
 
 Copyright (c) 2009 Ando Yasushi (andyjpn@gmail.com)
 
