@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>M17N.js sample</title>
+  <script src="../lib/m17n.js"></script>
+  <script>
+    M17N.resources.ja = {
+      greeting: "ご挨拶",
+      hello: "こんにちは",
+      en: "英語にする",
+      ja: "日本語にする"
+    };
+    M17N.resources.en = {
+      greeting: "Say Greetings",
+      hello: "Hello",
+      en: "English",
+      ja: "Japanese"
+    };
+  </script>
+</head>
+<body>
+  <button class="t" onclick="alert(t('hello'))">greeting</button>
+  <button class="t" onclick="M17N.setLocale('en'); location.reload()">en</button>
+  <button class="t" onclick="M17N.setLocale('ja'); location.reload()">ja</button>
+</body>
+</html>
